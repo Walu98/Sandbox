@@ -1,5 +1,5 @@
 def broken_scores(score):
-    getScore = int(input("Enter score:"))
+    getScore = int(input("Enter a score:"))
     return getScore
 
 
