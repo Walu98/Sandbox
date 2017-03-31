@@ -8,10 +8,11 @@ def get_number(lower, upper):
         number = int(input("Enter a number between 10-100:"))
         if number >= 10 and number <=100:
             print("Success")
-            break
+            return number
         else:
             print("Please enter within range")
      except ValueError:
         print("<ERROR> Enter a valid number.")
 
-get_number(lower, upper)
+user_input = get_number(lower, upper)
+print("You entered:",user_input)
