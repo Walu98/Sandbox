@@ -12,7 +12,7 @@ def get_number(lower, upper):
         else:
             print("Please enter within range")
      except ValueError:
-        print("<ERROR> Enter a valid number.")
+        print("<ERROR> Please enter a valid number.")
 
 user_input = get_number(lower, upper)
 print("You entered:",user_input)
