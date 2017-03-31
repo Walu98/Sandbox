@@ -6,7 +6,7 @@ MIN_PRICE = 1.0
 MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
 
-price = INITIAL_PRICE
+price = INITIAL_PRICE #initial
 print("Starting price ${:,.2f}".format(price))
 
 day = 0
