@@ -1,7 +1,7 @@
 """
 Walu
 """
-def main():
+def main(): #
     name = get_name(0)
     frequency = number_of_letters(name)
 
