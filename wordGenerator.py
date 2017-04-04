@@ -8,11 +8,7 @@ b.	Automatically (randomly) generate the word_format variable.
 """
 import random
 
-VOWELS = "aeiou"
-CONSONANTS = "bcdfghjklmnpqrstvwxyz"
-isRandom = True
-while ~isRandom:
-  word_format = input("Enter word format with c for consonant and v for vowel")
+def is_valid_format(word_format):
   word = ""
   for kind in word_format:
      if kind == "c":
@@ -20,9 +16,16 @@ while ~isRandom:
      elif kind == "v":
         word += random.choice(VOWELS)
      else:
-        print("Invalid")
+         pass#invalid
+
+  if kind != "c" and kind != "v":
+      return False#invalic
+  else:
+      return True
 
 
-  print(word) #print
-  break
-
+VOWELS = "aeiou"
+CONSONANTS = "bcdfghjklmnpqrstvwxyz"
+word_format = input("Enter word format with c for consonant and v for vowel")
+return_value = is_valid_format(word_format)
+print(return_value)
